@@ -16,5 +16,7 @@ Centrala frågor:
 
 1- Vi kan nu med hjälp av Puppeteer Scrap'a Jobbtitel, Företagsnamn & Ort.
 
-2- Vi skickar ovantående data via en array till /data
+2- Vi skickar ovantående data via en array till /data.
+
+3- Vi kan nu Scrap'a alla 3 pages, genom att vi säger till Puppeteer att clicka vidare. 
 
