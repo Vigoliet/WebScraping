@@ -1,6 +1,6 @@
 # Arbetsform Uppgift
 
-Verktyg: Node, Puppeteer, VisualStudioCode
+Verktyg: Node, Puppeteer, VisualStudioCode, bootstrap
 
 Centrala frågor: 
 - Har vi förstått uppdraget?
