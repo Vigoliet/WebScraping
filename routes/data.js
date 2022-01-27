@@ -20,8 +20,12 @@ router.get('/', function (req, res, next) {
                 let items = document.querySelectorAll('.card-container')
                 items.forEach((item) => {
                     results.push({
-                        // url: item.getAttribute('href'),
-                        title: item.querySelector('a').innerText,
+                    // title(job), company name and location
+                        // job
+                        title: item.querySelector('a').innerText, // takes the inner text of the a-link attribute
+                    
+                        // company name and location
+                        companyname: item.querySelector('.pb-company-name').innerText,
                     })
                 })  
                 
