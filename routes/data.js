@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
     async function data() {
         try {
-            const URL = 'https://arbetsformedlingen.se/platsbanken/annonser?q=devops&l=2:CifL_Rzy_Mku'
+            const URL = 'https://arbetsformedlingen.se/platsbanken/annonser?ot=6YE1_gAC_R2G&q=devops&l=2:CifL_Rzy_Mku'
             const browser = await puppeteer.launch({headless: true})
             const page = await browser.newPage()
 
@@ -29,6 +29,8 @@ router.get('/', function (req, res, next) {
 
                          // company name and location
                              companyname: item.querySelector('.pb-company-name').innerText,
+
+                            date: item.querySelector('.ng-star-inserted').innerText,
                         })
                     })
                     return results

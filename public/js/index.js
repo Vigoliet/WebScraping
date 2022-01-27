@@ -40,6 +40,12 @@ const Load = (res) => {
         p.className = 'text-center text-light';
         p.textContent = data.companyname;
         col.appendChild(p);
+
+        const date = document.createElement('p');
+        date.className = 'text-center text-light';
+        date.textContent = data.date;
+        col.appendChild(date);
+
     });
 
 }
