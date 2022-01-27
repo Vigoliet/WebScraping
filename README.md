@@ -12,7 +12,7 @@ Centrala frågor:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-#Arbetsgång
+# Arbetsgång
 
 1- Vi kan nu med hjälp av Puppeteer Scrap'a Jobbtitel, Företagsnamn & Ort.
 2- Vi skickar ovantående data via en array till /data
