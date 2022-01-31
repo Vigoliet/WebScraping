@@ -4,7 +4,7 @@ console.log('alive');
 let results = [];
 
 const fetchData = fetch(
-    '/data'
+    './data.json'
 ).then((res) => res.json());
 
 const data = Promise.all([fetchData]);

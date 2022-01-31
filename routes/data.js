@@ -1,4 +1,5 @@
 var express = require('express');
+var fs = require('fs');
 const puppeteer = require('puppeteer');
 var router = express.Router();
 
@@ -45,8 +46,13 @@ router.get('/', function (req, res, next) {
                 }
                 currentPage++;
             }
-            console.log(data)
-            res.send(data)
+            fs.writeFile('./public/data.json', JSON.stringify(data), (err) => {
+                if (err) throw err;
+                console.log('The file has been saved!');
+            })
+
+            // console.log(data)
+            // res.send(data)
             await browser.close()
         } catch (error) {
             console.error(error)
