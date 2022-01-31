@@ -37,7 +37,7 @@ const Load = (res) => {
         col.appendChild(h3);
 
         const p = document.createElement('p');
-        p.className = 'text-center text-light';
+        p.className = 'text-center text-light';  
         p.textContent = data.companyname;
         col.appendChild(p);
 
@@ -45,6 +45,13 @@ const Load = (res) => {
         date.className = 'text-center text-light';
         date.textContent = data.date;
         col.appendChild(date);
+
+        var a = document.createElement('a');
+        a.href = data.url;
+        col.appendChild(a);
+        var link = document.createTextNode('\u{1F517}');
+        a.appendChild(link);
+         
 
     });
 
